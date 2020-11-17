@@ -33,14 +33,15 @@ function draw() {
   rectMode(CENTER);
   background(0);
   dustbinObj.display();
-  paperObject.display();
-  groundObject.display();
-  drawSprites();
+ paperObject.display();
+groundObject.display();
+drawSprites();
  
 }
 function keyPressed() { 
-	if (keyCode === UP_ARROW) { 
-		Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:85,y:-85}); } }
+if (keyCode === UP_ARROW) { 
+Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:85,y:-85}); } }
 
 
 
+  
